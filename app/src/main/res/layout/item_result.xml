@@ -7,7 +7,7 @@
     android:padding="10dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivIsGood"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:src="@drawable/ic_good"
@@ -19,25 +19,25 @@
         android:id="@+id/tvImg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
         android:text="IMG : 20.4"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivIsGood"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
         android:layout_marginTop="9dp"
         android:text="25/12/2020"
         android:textSize="18sp"
+        android:layout_marginStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivIsGood"
         app:layout_constraintTop_toBottomOf="@+id/tvImg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

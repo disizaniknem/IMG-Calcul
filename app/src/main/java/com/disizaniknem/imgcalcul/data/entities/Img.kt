@@ -11,6 +11,7 @@ data class Img(
     val poids: Int,
     val taille: Int,
     val sexe: Int,
+    val isGood: Boolean,
     @PrimaryKey(autoGenerate = false)
     var id: String = UUID.randomUUID().toString()
 )

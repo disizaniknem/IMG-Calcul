@@ -1,4 +1,4 @@
-package com.disizaniknem.imgcalcul.ui.viewmodels
+package com.disizaniknem.imgcalcul.ui
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
@@ -7,9 +7,15 @@ import com.disizaniknem.imgcalcul.repositories.ImgRepository
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class CalculViewModel @ViewModelInject constructor(
+class ImgViewModel @ViewModelInject constructor(
     private val repository: ImgRepository
 ) : ViewModel() {
+
+    fun getAllResults() = repository.getAllResults()
+
+    fun delete(imgId: String) = GlobalScope.launch {
+        repository.delete(imgId)
+    }
 
     fun insert(img: Img) = GlobalScope.launch {
         repository.insert(img)

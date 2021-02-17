@@ -10,7 +10,7 @@ class ImgRepository @Inject constructor(
 
     suspend fun insert(img: Img) = imgDao.insert(img)
 
-    suspend fun delete(img: Img) = imgDao.delete(img)
+    suspend fun delete(imgId: String) = imgDao.delete(imgId)
 
     fun getAllResults() = imgDao.getAllResults()
 
