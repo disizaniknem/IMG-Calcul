@@ -15,8 +15,4 @@ class CalculViewModel @ViewModelInject constructor(
         repository.insert(img)
     }
 
-    fun delete(img: Img) = GlobalScope.launch {
-        repository.insert(img)
-    }
-
 }

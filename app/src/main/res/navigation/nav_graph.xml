@@ -9,18 +9,11 @@
         android:id="@+id/calculFragment"
         android:name="com.disizaniknem.imgcalcul.ui.fragments.CalculFragment"
         android:label="CalculFragment" >
-        <argument
-            android:name="id"
-            app:argType="long"
-            android:defaultValue="-1L" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.disizaniknem.imgcalcul.ui.fragments.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
-        <action
-            android:id="@+id/action_resultFragment_to_calculFragment"
-            app:destination="@id/calculFragment" />
     </fragment>
 </navigation>
