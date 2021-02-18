@@ -49,7 +49,7 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ImgViewHolder>() {
     override fun onBindViewHolder(holder: ImgViewHolder, position: Int) {
         val result = results[position]
         holder.itemView.apply {
-            tvImg.text = "IMG : ${result.result}"
+            tvImg.text = "IMG : ${result.result}%"
 
             ivIsGood.setImageResource(
                 if (result.isGood) R.drawable.ic_good else R.drawable.ic_bad
